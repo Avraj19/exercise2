@@ -12,16 +12,16 @@
 # print something like: 'You said you we're 28 hence you were born in 1991!'
 
 # Define the following variables
-name = input('Enter your First name: ').capitalize()
-last_name = input('Enter your First name: ').capitalize()
-species = input('Enter your what species you are: ').capitalize()
-eye_color = input('What color is your eyes:').capitalize()
-hair_color = input('What color is your hair:').capitalize()
-age = int (input('What is your age:'))
+name = input('Enter your First name: ').capitalize().strip()
+last_name = input('Enter your First name: ').capitalize().strip()
+species = input('Enter your what species you are: ').capitalize().strip()
+eye_color = input('What color is your eyes: ').capitalize().strip()
+hair_color = input('What color is your hair: ').capitalize().strip()
+age = int (input('What is your age: ')).strip()
 age_in_years = 2020 - age
 
 
-print(f"Hi {name +' '+ last_name}, welcome to Sparta Global,"
-      f" you gender is {species}, ohh sorry species is {species}."
-      f" Moving on so lets see, your eye color is {eye_color} and hair color is {hair_color}."
-      f"Lastly your age is {age} and you were born in {age_in_years} ")
+print(f"Hi {name} {last_name}, welcome to Sparta Global, \n"
+      f" you gender is {species}, ohh sorry species is {species}.\n "
+      f" Moving on so lets see, your eye color is {eye_color} and hair color is {hair_color}.\n"
+      f"Lastly your age is {age} and you were born in {age_in_years}")

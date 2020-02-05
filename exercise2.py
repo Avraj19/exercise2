@@ -5,7 +5,9 @@
 
 sec_number = 12
 
-user_number = int (input('Guess my secret number, its between 1 and 20:'))
+user_number = int (input('Guess my secret number, its between 1 and 20: '))
 
 check_guess = user_number is sec_number
+print(check_guess,'\n' 
+                 ' If True you are correct but if False then you have it wrong.')
 
